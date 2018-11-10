@@ -4,6 +4,9 @@ module.exports = {
   extends: ['eslint:recommended', 'prettier'],
   plugins: ['prettier'],
   parserOptions: {
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true
+    },
     sourceType: 'module',
     ecmaVersion: 8
   },
